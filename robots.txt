@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.reviverootsllcmassage.com/sitemap.xml
+Sitemap: https://www.reviverootsmassage.com/sitemap.xml
