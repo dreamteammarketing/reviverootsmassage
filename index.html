@@ -172,7 +172,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <span style="aspect-ratio: 1; border-radius: 999px; background: #DCE6E0"></span>
 <span style="aspect-ratio: 1; border-radius: 999px; border: 2px dashed #2E5E50; box-sizing: border-box"></span>
 </div>
-<div style="font-size: 15px; color: #4F5B55">Example card: 3 of 10. Clients see their own count on their receipt text.</div>
+<div style="font-size: 15px; color: #4F5B55">No card to carry or lose. Every visit is logged in your client file, so the 10th one comes off automatically at checkout. Just ask if you want to know where you are.</div>
 </div>
 <div style="background: #FFFFFF; border: 1px solid #E2DCCD; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
 <div style="font-weight: 600; font-size: 19px">Bring a friend, save 5% each</div>
@@ -181,7 +181,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div style="background: #F4F2EC; border-radius: 14px; padding: 14px 8px"><div style="font-size: 28px; font-weight: 700; font-family: 'Bricolage Grotesque', sans-serif">10%</div><div style="font-size: 14px; color: #4F5B55">2 friends</div></div>
 <div style="background: #DCE6E0; border-radius: 14px; padding: 14px 8px"><div style="font-size: 28px; font-weight: 700; font-family: 'Bricolage Grotesque', sans-serif">15%</div><div style="font-size: 14px; color: #4F5B55">3 friends</div></div>
 </div>
-<a href="sms:?&amp;body=I%20found%20a%20great%20massage%20therapist%20in%20Neptune%20Beach%20-%20Mariah%20at%20Revive%20Roots.%20Mention%20my%20name%20when%20you%20book!%20reviverootsmassage.com" style="font-weight: 600">Text a friend a referral →</a>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="ref-name" style="font-size: 15px; color: #4F5B55">Already a client? Add your name so I know who to thank:</label>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><input id="ref-name" type="text" autocomplete="given-name" placeholder="Your first name" style="flex: 1 1 160px; min-width: 0; min-height: 44px; box-sizing: border-box; padding: 10px 14px; border: 2px solid #D9D3C4; border-radius: 999px; font: inherit; font-size: 16px">
+<a id="ref-sms" href="sms:" style="flex: 0 0 auto; background: #2E5E50; color: #FFFFFF; text-decoration: none; padding: 10px 18px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Text a friend</a></div>
+<span style="font-size: 14px; color: #4F5B55">Your friend picks "Referred by" with your name when they book, and your savings are applied at your next visit.</span></div>
 </div>
 </div>
 <p id="discount-note" style="margin: 0; font-size: 15px; color: #1E2B25; background: #DCE6E0; border-radius: 14px; padding: 14px 18px"></p>
@@ -408,6 +411,13 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
     } else if (t.id === 'btn-first') setState({ first: !s.first });
     else if (t.id === 'btn-cash') setState({ cash: !s.cash });
   });
+  function refLink() {
+    var n = ($('ref-name').value || '').trim();
+    var body = 'I found a great massage therapist in Neptune Beach: Mariah at Revive Roots. ' + (n ? 'Tell her ' + n + ' sent you' : 'Mention my name') + " when you book and we'll both save 5%! https://www.reviverootsmassage.com";
+    $('ref-sms').href = 'sms:?&body=' + encodeURIComponent(body);
+  }
+  $('ref-name').addEventListener('input', refLink);
+  refLink();
   render();
 })();
 </script>
