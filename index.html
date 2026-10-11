@@ -20,7 +20,11 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:#F4F2EC}
 a{color:#2E5E50}a:hover{color:#1E2B25}
-button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7791F;outline-offset:2px}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #B7791F;outline-offset:2px}
+.gold-rule{height:2px;background:linear-gradient(90deg,rgba(183,121,31,0),#B7791F 20%,#E9CB86 50%,#B7791F 80%,rgba(183,121,31,0))}
+.eyebrow{display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";flex:0 0 auto;width:28px;height:2px;border-radius:2px;background:linear-gradient(90deg,#B7791F,#E3C07A)}
+.gold-text{background:linear-gradient(100deg,#9A6416,#C99A3E 45%,#E3C07A 60%,#B7791F);-webkit-background-clip:text;background-clip:text;color:transparent}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"Revive Roots LLC Massage Therapy","url":"https://www.reviverootsmassage.com/","telephone":"+1-904-687-4787","address":{"@type":"PostalAddress","streetAddress":"806 Third St, Unit D","addressLocality":"Neptune Beach","addressRegion":"FL","postalCode":"32266","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":30.31774,"longitude":-81.39763},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"16:00"}],"priceRange":"$110-$210","employee":{"@type":"Person","name":"Mariah Garcia","jobTitle":"Licensed Massage Therapist (MA89014)","knowsAbout":["Medical massage","Deep tissue massage","Prenatal massage"]},"founder":{"@type":"Person","name":"Mariah Garcia"},"description":"Medical, deep tissue and prenatal massage in Neptune Beach, FL by Mariah Garcia, LMT MA89014, licensed since 2017.","sameAs":["https://share.google/rOQcFQUYb46i0HPda"]}
@@ -38,6 +42,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <a href="sms:+19046874787" style="color: #F4F2EC; font-weight: 600">Text Mariah: 904-687-4787</a>
 </div>
 </div>
+
+<div class="gold-rule" aria-hidden="true"></div>
 
 <!-- Nav -->
 <div style="max-width: 1160px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
@@ -57,7 +63,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <!-- Hero -->
 <div style="max-width: 1160px; margin: 0 auto; padding: 32px 24px 72px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
 <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Neptune Beach, FL · Licensed since 2017</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Neptune Beach, FL · Licensed since 2017</span>
 <h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 68px); line-height: 1.02; letter-spacing: -0.03em">The knot you've been living with? Let's find it.</h1>
 <p style="margin: 0; font-size: 20px; color: #3A4640; max-width: 34rem">Hi, I'm Mariah, a Certified Medical Massage Therapist. Tell me where it hurts and I'll build your session around it, steps from the beach.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -71,7 +77,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 </div>
 </div>
 <div style="flex: 1 1 340px; min-width: 0; position: relative">
-<picture><source srcset="images/mariah.webp" type="image/webp"><img src="images/mariah.jpg" width="888" height="1088" fetchpriority="high" alt="Mariah Garcia, licensed massage therapist" style="width: 100%; max-width: 440px; aspect-ratio: 888 / 1088; height: auto; object-fit: cover; border-radius: 220px 220px 24px 24px; display: block; margin-left: auto"></picture>
+<picture><source srcset="images/mariah.webp" type="image/webp"><img src="images/mariah.jpg" width="888" height="1088" fetchpriority="high" alt="Mariah Garcia, licensed massage therapist" style="width: 100%; max-width: 440px; aspect-ratio: 888 / 1088; height: auto; object-fit: cover; border-radius: 220px 220px 24px 24px; box-shadow: 0 0 0 7px #F4F2EC, 0 0 0 9px #C99A3E; display: block; margin-left: auto"></picture>
 <a href="#reviews" style="position: absolute; left: 0; bottom: 28px; background: #FFFFFF; border-radius: 16px; padding: 14px 18px; box-shadow: 0 10px 30px rgba(30,43,37,0.12); max-width: 250px; text-decoration: none; color: #1E2B25; display: flex; flex-direction: column; gap: 4px">
 <span style="color: #B7791F; font-size: 18px; letter-spacing: 2px" aria-hidden="true">★★★★★</span>
 <span style="font-weight: 600; font-size: 15px">5-star reviews on Google, from clients of 7+ years</span>
@@ -84,16 +90,16 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div id="about" style="background: #E9E4D8">
 <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
 <div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">About me</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">About me</span>
 <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -0.02em">Rooted in listening. Built around you.</h2>
 <p style="margin: 0; font-size: 18px; color: #3A4640">I'm Mariah Garcia, owner of Revive Roots LLC and a Florida licensed massage therapist since 2017. I specialize in medical and deep tissue massage and I'm a Certified Medical Massage Therapist.</p>
 <p style="margin: 0; color: #3A4640">My goal is simple: ease the muscle tension you've been carrying, bring your stress down, and help you move and feel better in your everyday life. Every session starts with a conversation about what's bothering you, and I keep checking in on pressure and comfort the whole way through. That's why no two of my massages look the same.</p>
 <p style="margin: 0; color: #3A4640">Revive Roots is about getting to the root of what's holding you back, not just working the surface. Some of my clients have been with me for more than seven years, through desk jobs, training seasons and pregnancies. I'd love to be that person for you, too.</p>
 <p style="margin: 0; color: #3A4640">You'll find me in my new space in Neptune Oaks Business Plaza, inside Touch Massage &amp; Reiki, just steps from the beach.</p>
-<div style="font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: 28px; font-weight: 700; color: #2E5E50; letter-spacing: -0.02em">— Mariah</div>
+<div style="font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: 30px; font-weight: 700; letter-spacing: -0.02em"><span class="gold-text">— Mariah</span></div>
 </div>
 <div style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 20px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">My roots</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">My roots</span>
 <div style="display: flex; gap: 16px"><span style="flex: 0 0 auto; width: 14px; height: 14px; margin-top: 6px; border-radius: 999px; background: #2E5E50"></span><div><div style="font-weight: 600">2017 · Licensed in Florida</div><div style="font-size: 15px; color: #4F5B55">LMT MA89014. Hands-on work every week since.</div></div></div>
 <div style="display: flex; gap: 16px"><span style="flex: 0 0 auto; width: 14px; height: 14px; margin-top: 6px; border-radius: 999px; background: #2E5E50"></span><div><div style="font-weight: 600">Certified Medical Massage Therapist</div><div style="font-size: 15px; color: #4F5B55">Assessment-based work for a specific complaint, not a one-size routine.</div></div></div>
 <div style="display: flex; gap: 16px"><span style="flex: 0 0 auto; width: 14px; height: 14px; margin-top: 6px; border-radius: 999px; background: #2E5E50"></span><div><div style="font-weight: 600">Trusted through pregnancy</div><div style="font-size: 15px; color: #4F5B55">Careful, comfortable positioning for moms-to-be.</div></div></div>
@@ -108,7 +114,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Session finder</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Session finder</span>
 <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -0.02em">Where are you holding it?</h2>
 <p style="margin: 0; color: #4F5B55">Tap everything that applies. I'll suggest a length and write the text to me for you.</p>
 </div>
@@ -144,7 +150,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div id="pricing" style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 32px">
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
 <div style="display: flex; flex-direction: column; gap: 8px; max-width: 36rem">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Honest pricing</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Honest pricing</span>
 <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -0.02em">See exactly what you'll pay.</h2>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
@@ -170,7 +176,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <span style="aspect-ratio: 1; border-radius: 999px; background: #DCE6E0"></span>
 <span style="aspect-ratio: 1; border-radius: 999px; background: #DCE6E0"></span>
 <span style="aspect-ratio: 1; border-radius: 999px; background: #DCE6E0"></span>
-<span style="aspect-ratio: 1; border-radius: 999px; border: 2px dashed #2E5E50; box-sizing: border-box"></span>
+<span style="aspect-ratio: 1; border-radius: 999px; border: 2px dashed #B7791F; box-sizing: border-box; display: flex; align-items: center; justify-content: center; color: #B7791F; font-size: 12px" aria-hidden="true">★</span>
 </div>
 <div style="font-size: 15px; color: #4F5B55">No card to carry or lose. Every visit is logged in your client file, so the 10th one comes off automatically at checkout. Just ask if you want to know where you are.</div>
 </div>
@@ -195,7 +201,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div id="visit" style="background: #E9E4D8">
 <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Your first visit</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Your first visit</span>
 <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -0.02em">No guessing, start to finish.</h2>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px">
@@ -228,7 +234,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div id="reviews" style="max-width: 1160px; margin: 0 auto; padding: 72px 24px 24px; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: flex-end">
 <div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Google reviews</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">Google reviews</span>
 <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -0.02em">What clients say</h2>
 <div style="display: flex; align-items: center; gap: 12px"><span style="color: #B7791F; font-size: 22px; letter-spacing: 2px" aria-hidden="true">★★★★★</span><span style="font-weight: 600">5-star reviews on Google</span></div>
 </div>
@@ -238,7 +244,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 </div>
 </div>
 <div style="columns: 300px 3; column-gap: 20px">
-<figure style="break-inside: avoid; margin: 0 0 20px; background: #2E5E50; color: #F4F2EC; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<figure style="break-inside: avoid; margin: 0 0 20px; background: #2E5E50; color: #F4F2EC; border-radius: 20px; box-shadow: inset 0 0 0 1px rgba(227,192,122,0.55); padding: 24px; display: flex; flex-direction: column; gap: 12px">
 <span style="color: #F2C46D; letter-spacing: 2px" aria-label="5 stars">★★★★★</span>
 <blockquote style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: 22px; line-height: 1.25; font-weight: 500">"Mariah has been my massage therapist for over seven years, and she is truly exceptional. She is always attentive to what my body needs on any given day and takes extra time with any areas that are troublesome."</blockquote>
 <figcaption style="font-size: 14px; color: #DCE6E0">Kendra Pressley · <span style="background: rgba(255,255,255,0.14); padding: 2px 10px; border-radius: 999px; white-space: nowrap">Client for 7+ years</span></figcaption>
@@ -264,7 +270,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <!-- FAQ -->
 <div style="max-width: 1160px; margin: 0 auto; padding: 48px 24px 72px; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">FAQ</span>
+<span class="eyebrow" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2E5E50">FAQ</span>
 <p style="margin: 0; font-size: 18px; color: #3A4640">Still wondering about something? Just text me.</p>
 <a href="sms:+19046874787" style="align-self: flex-start; background: #1E2B25; color: #FFFFFF; text-decoration: none; padding: 12px 20px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Text 904-687-4787</a>
 </div>
@@ -285,13 +291,13 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
 <div style="background: #1E2B25; color: #F4F2EC">
 <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px 40px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center">
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.02em; max-width: 30rem">Your body's been asking. Answer it this week.</h2>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-size: clamp(30px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.02em; max-width: 30rem">Your body's been asking. <span style="color: #E3C07A">Answer it this week.</span></h2>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <a href="https://www.massagebook.com/therapists/revive-roots-llc/widget/services?src=external" data-book style="background: #F4F2EC; color: #1E2B25; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book online</a>
 <a href="sms:+19046874787" style="color: #F4F2EC; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; border: 2px solid #F4F2EC; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Text 904-687-4787</a>
 </div>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; font-size: 15px; color: #C9D6CF; border-top: 1px solid #3A4A42; padding-top: 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; font-size: 15px; color: #C9D6CF; border-top: 1px solid rgba(227,192,122,0.45); padding-top: 24px">
 <div>Revive Roots LLC Massage Therapy<br>806 Third St, Unit D, Neptune Beach, FL 32266<br>Inside Touch Massage &amp; Reiki</div>
 <div>Mon–Fri 9 AM–4 PM · Sat–Sun closed<br>Mariah Garcia, LMT MA89014</div>
 <div style="display: flex; flex-direction: column; gap: 4px"><a href="https://share.google/rOQcFQUYb46i0HPda" style="color: #F4F2EC">Google reviews</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=806+3rd+St+Ste+D,+Neptune+Beach,+FL+32266" style="color: #F4F2EC">Directions</a><a href="#about" style="color: #F4F2EC">About Mariah</a></div>
@@ -379,8 +385,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #B7
     var disp = "font-family: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif; font-weight: 700";
     $('prices').innerHTML = base.map(function (b, i) {
       var r = i === idx && s.areas.length > 0;
-      return '<div style="background: #FFFFFF; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; border: ' + (r ? '3px solid #2E5E50' : '1px solid #E2DCCD') + '">' +
-        (r ? '<span style="align-self: flex-start; background: #2E5E50; color: #FFFFFF; font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 999px">Your match</span>' : '') +
+      return '<div style="background: #FFFFFF; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; border: ' + (r ? '3px solid #C99A3E' : '1px solid #E2DCCD') + '">' +
+        (r ? '<span style="align-self: flex-start; background: #F6E9C9; color: #6E4710; border: 1px solid #D9B567; font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 999px">Your match</span>' : '') +
         '<div style="' + disp + '; font-size: 24px">' + pnames[i] + '</div>' +
         '<div style="display: flex; align-items: baseline; gap: 10px"><span style="' + disp + '; font-size: 52px; letter-spacing: -0.03em">$' + (b - off) + '</span>' +
         (off > 0 ? '<span style="text-decoration: line-through; color: #4F5B55; font-size: 20px">$' + b + '</span>' : '') + '</div>' +
