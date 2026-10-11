@@ -311,7 +311,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
   var BOOK = 'https://www.massagebook.com/therapists/revive-roots-llc/widget/services?src=external';
   // Paste Mariah's MassageBook "New Client" promotion page URL here. When set, every
   // Book button sends first-time visitors straight to the discounted booking page.
-  var NEW_CLIENT_BOOK = '';
+  var NEW_CLIENT_BOOK = 'https://www.massagebook.com/revive-roots-llc/massage/deals/New-Client-Special-20-Off-Your-First-Massage/209905';
   var PROOF = {
     preg: ['She has also treated me during both of my pregnancies, and I always felt like I was in such good hands with her.', 'Julissa G.'],
     stress: ['I left feeling relaxed, relieved, and like I could finally breathe again!', 'Kendra J.'],
@@ -395,7 +395,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{o
 
     Array.prototype.forEach.call(document.querySelectorAll('[data-book]'), function (a) { a.href = bookUrl; });
     $('discount-note').textContent = !s.first ? (s.cash ? 'Pay with cash, Venmo or Zelle at your appointment and $5 comes off.' : 'Returning client? Your loyalty card and referral savings are applied at checkout.')
-      : NEW_CLIENT_BOOK ? 'New here? Every Book button on this page now opens my new-client booking page with $20 off already applied.'
+      : NEW_CLIENT_BOOK ? 'New here? Every Book button on this page takes you to my new-client special, with $20 off already applied.'
       : "New here? Book any session as normal. Your $20 first-visit discount comes off when you check out after your massage.";
     $('btn-first').setAttribute('style', chip(s.first));
     $('btn-first').setAttribute('aria-pressed', s.first);
